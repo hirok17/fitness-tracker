@@ -1,0 +1,17 @@
+ul a {
+    color: aliceblue;
+    transition: color 1s;
+}
+ul a.active {
+    color: #FF000A;
+}
+ul a:hover {
+    color: #FF000A;
+ 
+}
+#path:hover{
+    clip-path: polygon(13% 0, 100% 0%, 87% 100%, 0% 100%);
+    
+    border-top: 2px solid white;
+    
+}
