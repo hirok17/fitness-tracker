@@ -1,0 +1,13 @@
+#card_img{
+    overflow: hidden;
+}
+
+#card_img img{
+    transition: 1s all ease-in-out;
+}
+#card_img:hover img {
+    transform: scale(1.2);
+    border-radius: 8px;
+} 
+ 
+

@@ -60,7 +60,7 @@ const Signup = () => {
     return (
         <section>
             <Helmet>
-                <title>Job Box | create a account for job</title>
+                <title>Fit wear | create a account</title>
             </Helmet>
             <Title title="Create Your Account"></Title>
             <div className="bg-[#F5F7FC] py-10 relative">
