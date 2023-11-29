@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.svg"
 const Footer = () => {
     return (
-        <section className="bg-black text-white">
+        <section className="bg-black text-white z-0">
               <footer className="container mx-auto footer p-10">
             <aside>
                 <img src={logo} alt="" />
