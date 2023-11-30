@@ -6,6 +6,7 @@ import { AuthContext } from "../../Authprovider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import { FaRegEyeSlash, FaRegEye, FaGoogle } from "react-icons/fa6";
 import Title from "../../Component/Header/sheard/Title";
+import axios from "axios";
 
 
 const Signup = () => {
@@ -26,6 +27,7 @@ const Signup = () => {
             .then(result => {
                 const signInuser = result.user;
                 console.log(signInuser);
+                
 
                 updateProfile(result.user, {
                     displayName: name,
@@ -34,10 +36,17 @@ const Signup = () => {
                 })
                     .then(() => {
                         console.log('profile update');
+                        const users={name:result.user.displayName, email:result.user.email};  
+                        axios.post("http://localhost:5000/users", users)
+                        .then(res=>{
+                          console.log(res.data);
+                        })
+                        
                     })
                     .catch(error => {
                         console.log(error);
                     })
+                 
                 toast.success('sign Up success');
                 navigate('/');
             })
