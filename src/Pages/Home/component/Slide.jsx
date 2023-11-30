@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Slide = () => {
     return (
         <section>
-             <Carousel>
+             <Carousel showThumbs={false}>
                 <div className="relative">
                     <img src={banner1} />
                      <div className="absolute left-[10%] bottom-[40%] text-white text-left">
