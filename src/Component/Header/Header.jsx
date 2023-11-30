@@ -70,7 +70,7 @@ const handelLogOut=()=>{
                             <li>
                                 <a className="uppercase">{user.displayName}</a>
                             </li>
-                            <li><a>Settings</a></li>
+                            <li><Link to="/dashboard">Dashboard</Link> </li>
                             <li><a onClick={handelLogOut}>Logout</a></li>
                         </ul>
                     </div>
