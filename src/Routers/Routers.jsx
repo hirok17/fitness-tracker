@@ -8,6 +8,7 @@ import Gallery from "../Pages/Gallery/Gallery";
 import About from "../Pages/About/About";
 import Login from "../Pages/Login/Login";
 import Signup from "../Pages/SignUp/Signup";
+import TrainerInfo from "../Pages/Trainer/component/TrainerInfo";
  
 
 const router= createBrowserRouter([
@@ -43,6 +44,11 @@ const router= createBrowserRouter([
           {
             path:"/signup",
             element:<Signup></Signup>
+          },
+          {
+            path:"/trainer/:id",
+            element:<TrainerInfo></TrainerInfo>,
+            loader:({params})=>fetch(`https://fitness-server-zeta.vercel.app/trainer/${params.id}`)
           }
         ]
       }

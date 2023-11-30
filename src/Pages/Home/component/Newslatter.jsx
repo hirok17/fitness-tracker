@@ -9,7 +9,7 @@ const Newslatter = () => {
         const userData={name, email};
         console.log(userData);
 
-        axios.post('http://localhost:5000/subscribe', userData)
+        axios.post('https://fitness-server-zeta.vercel.app/subscribe', userData)
         .then(res=>{
             console.log(res.data);
             if(res.data.insertedId){

@@ -1,4 +1,5 @@
 import { FaFacebook, FaSquareTwitter, FaLinkedin } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const TrainerCard = ({trainer}) => {
     const {_id, name, experience, image, class:course}=trainer;
     return (
@@ -17,7 +18,7 @@ const TrainerCard = ({trainer}) => {
                     <FaLinkedin />
                     </div>
                     <div className="card-actions mt-2">
-                        <button className="btn text-white bg-[#FF000A] hover:bg-[#141B22]">Know more</button>
+                        <Link to={`/trainer/${_id}`}><button className="btn text-white bg-[#FF000A] hover:bg-[#141B22]">Know more</button></Link>
                     </div>
                 </div>
             </div>

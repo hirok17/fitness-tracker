@@ -37,7 +37,7 @@ const Signup = () => {
                     .then(() => {
                         console.log('profile update');
                         const users={name:result.user.displayName, email:result.user.email};  
-                        axios.post("http://localhost:5000/users", users)
+                        axios.post("https://fitness-server-zeta.vercel.app/users", users)
                         .then(res=>{
                           console.log(res.data);
                         })

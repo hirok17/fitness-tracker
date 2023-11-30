@@ -5,21 +5,20 @@ const Footer = () => {
               <footer className="container mx-auto footer p-10">
             <aside>
                 <img src={logo} alt="" />
-                <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+                
             </aside>
             <nav>
-                <header className="footer-title">Services</header>
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
+                <header className="footer-title">Features</header>
+                <a className="link link-hover">ATHLETIC TRAINING </a>
+                <a className="link link-hover">WEIGHT LIFTING</a>
+                <a className="link link-hover">LEG PRESS</a>
+                <a className="link link-hover">BODY BUILDING</a>
             </nav>
             <nav>
                 <header className="footer-title">Company</header>
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
+                
             </nav>
             <nav>
                 <header className="footer-title">Legal</header>
@@ -28,6 +27,7 @@ const Footer = () => {
                 <a className="link link-hover">Cookie policy</a>
             </nav>
         </footer>
+        <p className="text-center">Copyright © 2023 - All right reserved.</p>
         </section>
     );
 };

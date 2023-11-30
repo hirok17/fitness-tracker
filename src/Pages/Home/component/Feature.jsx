@@ -7,7 +7,7 @@ import Card from "./Card";
 const Feature = () => {
     const [data, setData] =useState([]);
     useEffect(()=>{
-        axios.get('http://localhost:5000/features')
+        axios.get('https://fitness-server-zeta.vercel.app/features')
         .then(res=>{
             setData(res.data);
             console.log(res.data);
