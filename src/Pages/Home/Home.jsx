@@ -1,4 +1,5 @@
 import AboutUs from "./component/AboutUs";
+import Blogs from "./component/Blogs";
 import Feature from "./component/Feature";
 import Newslatter from "./component/Newslatter";
 import Slide from "./component/Slide";
@@ -15,6 +16,7 @@ const Home = () => {
            <AboutUs></AboutUs>
            <Testimonials></Testimonials>
            <Team></Team>
+           <Blogs></Blogs>
            <Newslatter></Newslatter>
         </div>
     );

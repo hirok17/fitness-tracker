@@ -44,7 +44,7 @@ const AllUser = () => {
                             <td>{item.email}</td>
                             <td>
                                 {
-                                    item.role =="admin" ? "Admin" :
+                                    item.role == "admin" ? "Admin" :
                                     <button onClick={()=>makeAdmin(item._id)} className="btn text-white bg-[#FF000A] hover:bg-[#141B22]">Make Admin</button>
 
                                 }
